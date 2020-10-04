@@ -80,7 +80,6 @@ header li a{
 
 .logo {
     grid-area: logo;
-<<<<<<< HEAD:lay-new.css
 }
 
 header {
@@ -88,8 +87,6 @@ header {
     grid-area: header;
     padding:0 5rem;
     box-shadow:0 2px 10px #ccc;
-=======
->>>>>>> debf19eb6164502bce9bbe4353a246cb940f00c0:main.css
 }
 
 .content {
