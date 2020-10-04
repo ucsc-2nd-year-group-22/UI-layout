@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 /* GLOBAL SCOPE VARIABLES*/
+/* Don't change   */
 :root {
     --main-theme-color: #058A00;
+    --main-light-green: #24aa20;
     --main-font-color: #404040;
     --main-dark-color: #6D6D6D;
     --main-bg-color: #FFFFFF;
@@ -77,6 +79,13 @@ nav li a:hover {
     border-radius: 50px;
     text-align: center;
     color:var(--main-bg-color);
+    font-weight: bold;
+    transition: all ease-out .3s;
+    cursor: pointer;
+}
+
+.header-popup-btn:hover {
+    background-color: var(--main-light-green);
 }
 
 .logo {
