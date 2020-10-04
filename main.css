@@ -64,7 +64,7 @@ nav li a {
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 1.2rem;
     color: var(--main-dark-color);
 }
 
@@ -144,6 +144,7 @@ footer {
     text-align: center;
     padding: 12px 0;
 }
+
 .user-tabs li {
     display: inline;
     
@@ -223,4 +224,15 @@ footer {
 .panel4 {
 
     grid-area:panel4;
+}
+
+.btn{
+    background-color: var(--main-light-green);
+    padding: 15px;
+    border: 0px solid var(--main-light-green);
+    border-radius: 5px;
+    color: var(--main-bg-color);
+    font-size: 15px;
+    font-weight: 500;
+
 }
