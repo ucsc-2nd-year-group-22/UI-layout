@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80% 1fr;
+      grid-template-columns: 1fr 80% 1fr;
+  -ms-grid-rows: 80px 8fr 50px;
+      grid-template-rows: 80px 8fr 50px;
+      grid-template-areas: "header header header" ". content ." "footer footer footer";
+  background-color: #eee;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr 100px;
+      grid-template-columns: 100px 1fr 100px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "logo nav btn";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  padding: 0 5rem;
+  -webkit-box-shadow: 0 2px 10px gray;
+          box-shadow: 0 2px 10px gray;
+}
+
+nav ul {
+  list-style-type: none;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  margin-left: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 5px 8px;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #bbb;
+  padding: 10px 15px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: btn;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
+  min-height: 600px;
+  padding: 10px 0;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+h2 {
+  padding: 25px 0 20px 0;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+footer {
+  background-color: #9e9e9e;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  text-align: center;
+  padding: 15px 0;
+}
+/*# sourceMappingURL=style.css.map */
