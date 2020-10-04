@@ -1,4 +1,4 @@
-// GLOBAL SCOPE VARIABLES
+/* // GLOBAL SCOPE VARIABLES */
 :root {
     --main-theme-color: #058A00;
     --main-font-color: #404040;
@@ -49,6 +49,18 @@ nav li a {
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
+    font-size: 26px;
+    color: var(--main-dark-color);
+}
+
+header .nav-profile ul li{
+    display: inline-block;
+}
+header li a{
+    text-decoration: none;
+    padding: 5px 8px;
+    font-weight: 500;
+    color: var(--main-theme-color);
 }
 
 .btn {
@@ -63,11 +75,10 @@ nav li a {
 
 .logo {
     grid-area: logo;
-    poi
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     grid-area: header;
     padding:0 5rem;
     box-shadow:0 2px 10px #ccc;
