@@ -1,4 +1,4 @@
-// GLOBAL SCOPE VARIABLES
+/* GLOBAL SCOPE VARIABLES*/
 :root {
     --main-theme-color: #058A00;
     --main-font-color: #404040;
@@ -32,10 +32,10 @@ header {
     "logo nav btn";
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(156, 73, 73);
+    background-color:var(--main-bg-color);
     grid-area: header;
     padding:0 5rem;
-    box-shadow:0 2px 10px: var(--main-bg-color);
+    box-shadow:0 2px 10px #ccc;
 }
 
 nav ul {
@@ -67,7 +67,6 @@ nav li a {
 
 .logo {
     grid-area: logo;
-    poi
 }
 
 .content {
