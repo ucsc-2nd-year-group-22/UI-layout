@@ -8,6 +8,7 @@
     --main-font-color: #404040;
     --main-dark-color: #6D6D6D;
     --main-bg-color: #FFFFFF;
+    --main-layout-bg-color:#eee;
     --main-font: 'Quicksand', sans-serif;
 }
 
@@ -16,7 +17,6 @@
     margin:0;
     box-sizing: border-box;
     font-family: var(--main-font);
-    color:var(--main-font-color);
 }
 
 .main-grid {
@@ -27,7 +27,8 @@
     "header header header"
     ". content ."
     "footer footer footer";
-    background-color: #eee;
+    background-color:var(--main-layout-bg-color);
+    height: 100vh;
 }
 
 header {
@@ -42,9 +43,11 @@ header {
     grid-area: header;
     padding:0 5rem;
     box-shadow:0 2px 10px #ccc;
+    
 }
 
 nav ul {
+
     list-style-type: none;
     grid-area: nav;
     margin-left: 20px;
@@ -56,6 +59,7 @@ nav ul li {
 }
 
 nav li a {
+    color:var(--main-font-color);
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
@@ -93,7 +97,7 @@ nav li a:hover {
 }
 
 .content {
-    /* background-color: aqua; */
+    color:var(--main-font-color);
     grid-area: content;
     min-height: 600px;
     padding: 10px 0;
@@ -112,8 +116,9 @@ p {
 }
 
 footer {
-    background-color: rgb(158, 158, 158);
+    color:var(--main-bg-color);
+    background-color: var(--main-dark-color);
     grid-area: footer;
     text-align: center;
-    padding: 15px 0;
+    padding: 12px 0;
 }
