@@ -1,3 +1,11 @@
+// GLOBAL SCOPE VARIABLES
+:root {
+    --main-theme-color: #058A00;
+    --main-font-color: #404040;
+    --main-dark-color: #6D6D6D;
+    --main-bg-color: #FFFFFF;
+}
+
 *{
     padding:0;
     margin:0;
