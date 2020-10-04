@@ -57,6 +57,11 @@ nav li a {
     font-weight: bold;
 }
 
+nav li a:hover {
+    color:var(--main-theme-color);
+    border-bottom: 2px solid var(--main-theme-color);
+}
+
 .active {
     color: var(--main-theme-color);
     
