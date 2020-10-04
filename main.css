@@ -11,6 +11,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color:var(--main-font-color);
 }
 
 .main-grid {
@@ -53,6 +54,12 @@ nav li a {
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
+    font-weight: bold;
+}
+
+.active {
+    color: var(--main-theme-color);
+    
 }
 
 .btn {
