@@ -142,3 +142,13 @@ footer {
     text-align: center;
     padding: 12px 0;
 }
+
+.btn{
+    background-color: var(--main-light-green);
+    padding: 15px;
+    border: 0px solid var(--main-light-green);
+    border-radius: 5px;
+    color: var(--main-bg-color);
+    font-size: 15px;
+    font-weight: 500;
+}
