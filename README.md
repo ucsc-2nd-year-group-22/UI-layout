@@ -2,13 +2,13 @@
 
 # Important !
 ## Color Scheme
-``#6D6D6D - Light gray
+```#6D6D6D - Light gray
   #058A00 - Green (Primary)
   #404040 - Dark gray
   #FFFFFF - White
-``
+```
 ## Use of variables
-`` examples:
+``` examples:
         :root {
           --main-bg-color: coral;
         }
@@ -20,7 +20,7 @@
         #div2 {
           background-color: var(--main-bg-color);
         }
-``
+```
 
 ## Resources
 * https://developer.mozilla.org/en-US/docs/Web/CSS
