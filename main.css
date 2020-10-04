@@ -158,7 +158,9 @@ footer {
     background-color: #FFFFFF;
     color:var(--main-theme-color);
 }
-
+.main-table {
+    overflow-x:auto;
+}
 .main-table table {
     border-collapse: collapse;
     width: 100%;
@@ -170,7 +172,35 @@ footer {
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
+
 .main-table tr:hover {
     background-color:#f5f5f5;
 }
 
+.filter-panel {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 6px;
+    grid-template-areas: 
+    "panel1 panel2 panel3 panel4";
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.filter-panel .panel1 {
+    grid-area:panel1;
+    color: red;
+}
+.panel2 {
+    grid-area:panel2;
+}
+.panel3 {
+
+    grid-area:panel3;
+}
+.panel4 {
+
+    grid-area:panel4;
+}
