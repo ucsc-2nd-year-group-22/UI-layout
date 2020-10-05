@@ -29,7 +29,7 @@
     ". content ."
     "footer footer footer";
     background-color:var(--main-layout-bg-color);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -234,4 +234,8 @@ footer {
     color: var(--main-bg-color);
     font-size: 15px;
     font-weight: 500;
+    transition: ease .3s;
+}
+.btn:hover {
+    background-color: var(--main-theme-color);
 }

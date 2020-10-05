@@ -1,4 +1,14 @@
-#myProfile{
+:root {
+    --main-theme-color: #058A00;
+    --main-light-green: #24aa20;
+    --main-font-color: #404040;
+    --main-dark-color: #6D6D6D;
+    --main-bg-color: #FFFFFF;
+    --main-layout-bg-color:#eee;
+    --main-font: 'Quicksand', sans-serif;
+}
+
+/* #myProfile{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -19,4 +29,68 @@
       padding: 15px;
       width: 100%;
       border-radius: 4px;
+  } */
+
+/*  New form css */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: var(--main-theme-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    transition: ease .3s;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--main-light-green);
+  }
+  
+  .main-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .main-form .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .main-form .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .main-form .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .main-form .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
   }
