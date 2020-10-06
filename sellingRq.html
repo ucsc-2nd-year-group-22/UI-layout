@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="my-profile.css">
+       <!--<link rel="stylesheet" href="radioBtn.css">  this is regarding to radio buttons (Weight Selections)-->
+     <!--<link rel="stylesheet" href="checkBox.css">  this is regarding to check boxes (Selection of fruit types)-->
+    <!--<link rel="stylesheet" href="datePick.css">  this is regarding to calander-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling RQ</title>
+</head>
+<body>
+
+    <div class="main-grid">
+        <header>
+            <img src="logo.png" width="100px" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Downloads</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-popup-btn">
+                My Profile
+            </div>
+        </header>
+
+        <!-- div tags contains the Selling request part -->
+        <div class="content">
+            <div class="subHeader">
+                <h1>Selling Requests</h1>
+                <hr>
+            </div>
+
+            <div class="main-form">
+
+            <form action="/action_page.php"> 
+
+            <!-- Select Crop -->  
+                <div class="row">
+                  <div class="col-25">
+                    <label for="selectCrop">Select Crop:</label>
+                  </div>
+
+                  <div class="col-75">
+                    <select id="selectCrop" name="selectCrop">
+                      <option value="Pumkin">Pumkin</option>
+                      <option value="Onion">Onion</option>
+                      <option value="Beetroot">Beetroot</option>
+                    </select>
+                  </div>
+                </div>
+            <!-- Select Crop Varity -->
+                <div class="row">
+                  <div class="col-25">
+                    <label for="cropVarity">Select Crop Varity:</label>
+                  </div>
+
+                  <div class="col-75">
+                    <select id="cropVarity" name="cropVarity">
+                      <option value="Varity1">Varity1</option>
+                      <option value="Varity2">Varity2</option>
+                      <option value="Varity3">Varity3</option>
+                    </select>
+                  </div>
+
+                </div>    
+            <!-- Select Your Area -->
+                 <div class="row">
+                  <div class="col-25">
+                    <label for="selectArea">Select Your Area:</label>
+                  </div>
+
+                  <div class="col-75">
+                    <select id="selectArea" name="selectArea">
+                      <option value="Kaluthara">Kaluthara</option>
+                      <option value="Colombo">Colombo</option>
+                      <option value="Gampaha">Gampaha</option>
+                    </select>
+                  </div>
+
+                </div>
+<br>
+
+                <!--Adding checkboxex (Select fruit type)-->
+            <div class="row">
+              <div class="col-25">
+                <label for="selectType">Select Fruits You Have:</label>
+              </div>
+
+                <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+              <label for="fruit1">Apple</label>
+              <input type="checkbox" id="fruit2" name="fruit-2" value="Banana" >
+              <label for="fruit2">Banana</label>
+              <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry">
+              <label for="fruit3">Cherry</label>
+              <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry">
+              <label for="fruit4">Strawberry</label>
+            </div>
+                
+                <!--Adding radio button (Select amount)-->
+            <div class="row">
+              <div class="col-25">
+                <label for="selectType">Select Amount You Have:</label>
+              </div>
+
+              <ul>
+
+                <input type="radio" id="weightR1" name="weightR1">
+                <label for="f-option">(0-10)Kg</label>
+                <input type="radio" id="weightR2" name="weightR2">
+                <label for="s-option">(10-20)Kg</label>
+                <input type="radio" id="weightR3" name="weightR3">
+                <label for="g-option">(30-40)Kg</label>
+
+              </ul>
+            </div>
+                 
+                 <!-- Harvest ready to sel period -->
+
+            <div class="row"> 
+              <div class="col-25"> 
+                <label for="readyToSell">Harvest Ready To Sell Period: </label>
+              </div> 
+              <p> 
+               <label for="from">From:</label>
+               <input type="date" name="from" id="from">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+               <label for="to">To:</label>
+               <input type="date" name="from" id="from">
+              </p> 
+            </div>
+                <br>
+
+                <!-- Select Offer Duration -->
+            <div class="row">
+              <div class="col-25">
+                <label for="selectDuration">Select Offer Duration:</label>
+              </div>
+
+              <div class="col-75">
+                <select id="selectDuration" name="selectDuration">
+                </select>
+              </div>
+
+            </div> 
+
+                <br>
+
+                <!-- Description Box -->
+            <div class="row">
+              <div class="col-25">
+                <label for="description">About Your Request:</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Enter description here (200 max characters)" style="height:200px "></textarea>
+              </div>
+            </div>
+
+                <!-- Submit button -->
+            <div class="row">
+              <div class="col-75">
+                <input type="submit" value="Create Selling Request">
+              </div>
+            </div>
+
+
+            </form>
+            </div> 
+
+        </div>
+
+        
+        
+
+        <footer>
+            <p>Ran Aswanu Harvest Management System &copy;</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
