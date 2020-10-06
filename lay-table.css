@@ -77,3 +77,16 @@
 .panel4 {
     grid-area:panel4;
 }
+
+.pane4 select{
+    width: auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 3px;
+}
+.pane4 label{
+    margin-left: 7px;
+}
+
