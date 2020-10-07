@@ -23,7 +23,7 @@
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 80% 1fr;
-    grid-template-rows: 80px 8fr 50px;
+    grid-template-rows: 100px 8fr 50px;
     grid-template-areas:
     "header header header"
     ". content ."
@@ -34,7 +34,7 @@
 
 header {
     display:grid;
-    grid-template-columns: 100px 1fr 200px;
+    grid-template-columns: 150px 1fr 100px;
     grid-template-rows: 1fr;
     grid-template-areas:
     "logo nav btn";
