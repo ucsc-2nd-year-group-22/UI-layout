@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/title-logo.png" type="image/icon type">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="lay-table.css">
-    <link rel="icon" href="images/title-logo.png" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lay-with-table</title>
+    <title>Table</title>
 </head>
 <body>
     <div class="main-grid">
@@ -46,10 +46,10 @@
             </div>
 
             <div class="filter-panel">
-                <div class="panel">
-                    <!-- <h4>Sort by</h4> -->
+                <div class="pane1">
                     <ul>
-                        <li id="sortByLbl"><label for="radio">Sort by</label></li>
+                        <li id="sortByLbl">
+                            <label for="radio">Sort by</label></li>
                         <li>
                             <label class="container">Acending
                               <input type="radio" checked="checked" name="radio">
@@ -91,28 +91,37 @@
                       <th>First Name</th>
                       <th>Last Name</th>
                       <th>Points</th>
-                      <th>Points</th>
+                      <th>Action</th>
                       <th>Points</th>
                     </tr>
                     <tr>
                       <td>Peter</td>
                       <td>Griffin</td>
                       <td>$100</td>
-                      <td>$100</td>
+                      <td>
+                          <button class="mini-button normal">Accept</button>
+                          <button class="mini-button danger">Reject</button>
+                        </td>
                       <td>$100</td>
                     </tr>
                     <tr>
                       <td>Lois</td>
                       <td>Griffin</td>
                       <td>$150</td>
-                      <td>$100</td>
+                      <td>
+                        <button class="mini-button normal">Accept</button>
+                        <button class="mini-button danger">Reject</button>
+                      </td>
                       <td>$100</td>
                     </tr>
                     <tr>
                       <td>Joe</td>
                       <td>Swanson</td>
                       <td>$300</td>
-                      <td>$100</td>
+                      <td>
+                        <button class="mini-button normal">Accept</button>
+                        <button class="mini-button danger">Reject</button>
+                      </td>
                       <td>$100</td>
                     </tr>
 

@@ -17,7 +17,6 @@
 .user-tabs li a:hover {
     color:var(--main-theme-color);
     background-color: #FFF;
-
 }
 
 .user-tabs {
@@ -26,56 +25,61 @@
     padding: 20px 0;
     border-bottom: 2px solid rgb(175, 175, 175);
     margin-bottom: 20px;
-
 }
 
 .user-tabs .active-tab {
     background-color: #FFFFFF;
     color:var(--main-theme-color);
 }
+
 .main-table {
     overflow-x:auto;
 }
+
 .main-table table {
     border-collapse: collapse;
     width: 100%;
     background-color:#FFF;
-  }
+}
 
 .main-table th, td {
     padding: 15px 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-  }
+}
 
 .main-table tr:hover {
     background-color:#f5f5f5;
 }
 
+
+/* Filter panel section ----------------------------------------- */
 .filter-panel {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 6px;
     grid-template-areas:
-    "panel1 panel2 panel3 panel4";
+    "pane1 pane2 pane3 pane4";
     padding: 10px;
     background-color: #fff;
     margin-bottom: 5px;
 }
 
-.filter-panel .panel1 {
-    grid-area:panel1;
-    color: red;
+.pane1 {
+    grid-area:pane1;
 }
-.panel2 {
-    grid-area:panel2;
+
+.pane2 {
+    grid-area:pane2;
 }
-.panel3 {
-    grid-area:panel3;
+
+.pane3 {
+    grid-area:pane3;
 }
-.panel4 {
-    grid-area:panel4;
+
+.pane4 {
+    grid-area:pane4;
 }
 
 .pane4 select{
@@ -86,6 +90,7 @@
     resize: vertical;
     margin-left: 3px;
 }
+
 .pane3 select{
     width: 50%;
     padding: 8px;
@@ -94,14 +99,16 @@
     resize: vertical;
     margin-left: 3px;
 }
+
 .pane4 label{
     margin-left: 7px;
 }
+
 .pane3 label{
     margin-left: 7px;
 }
 
-/* For button groups */
+/* For button groups (Radio Buttons) -------------------------------------- */
 .container {
     display: block;
     position: relative;
@@ -114,23 +121,23 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  ul li{
-      display: inline-block;
-  }
+}
 
-  .panel ul{
-      padding-left: 10px;
-  }
+.filter-panel ul li{
+    display: inline-block;
+}
+
+.filter-panel ul{
+    padding-left: 10px;
+}
   
-  .container input {
+.filter-panel .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+}
   
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,35 +145,35 @@
     width: 20px;
     background-color: #eee;
     border-radius: 50%;
-  }
-  
-  .container:hover input ~ .checkmark {
+}
+
+.container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-  
-  .container input:checked ~ .checkmark {
+}
+
+.container input:checked ~ .checkmark {
     background-color: #2196F3;
-  }
-  
-  .checkmark:after {
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  .container .checkmark:after {
-       top: 6px;
-      left: 6px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
+}
 
-  #sortByLbl{
-      margin-right: 15px;
-  }
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#sortByLbl{
+    margin-right: 15px;
+}
