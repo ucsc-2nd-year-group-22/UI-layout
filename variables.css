@@ -9,4 +9,8 @@
     --main-bg-color: #FFFFFF;
     --main-layout-bg-color:#eee;
     --main-font: 'Quicksand', sans-serif;
+
+/* Color COdes */
+    --danger: rgb(200, 78, 78);
+    --normal: rgb(182, 182, 182);
 }

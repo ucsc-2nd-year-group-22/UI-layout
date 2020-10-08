@@ -122,3 +122,6 @@ p {
     line-height: 1.8em;
 }
 
+.danger {
+    background-color: var(--danger);
+}
