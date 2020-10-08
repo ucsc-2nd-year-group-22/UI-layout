@@ -1,17 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 /* Please make sure to add common styles to this document */
-/* GLOBAL SCOPE VARIABLES*/
-/* Don't change   */
-:root {
-    --main-theme-color: #058A00;
-    --main-light-green: #24aa20;
-    --main-font-color: #404040;
-    --main-dark-color: #6D6D6D;
-    --main-bg-color: #FFFFFF;
-    --main-layout-bg-color:#eee;
-    --main-font: 'Quicksand', sans-serif;
-}
+@import "variables.css"; 
 
 *{
     padding:0;
