@@ -14,10 +14,15 @@
   transition: ease .3s;
   font-size: 1.1em;
   font-weight: bold;
+  outline: none;
 }
 
 .btn:hover, input[type=submit]:hover {
   background-color: var(--main-light-green);
+}
+
+.btn:active, input[type=submit]:active {
+  background-color: var(--main-dark-green);
 }
 
 input[type=text], select, textarea {
@@ -26,7 +31,7 @@ input[type=text], select, textarea {
   padding: 12px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 2px solid rgb(223, 223, 223);
   transition: 0.5s;
   outline: none;
   resize: vertical;
@@ -34,8 +39,8 @@ input[type=text], select, textarea {
   color:var(--main-font-color);
 }
 
-input[type=text]:focus {
-  border: 1px solid var(--main-theme-color);
+input[type=text]:focus, textarea:focus, select:hover {
+  border: 2px solid var(--main-light-green);
 }
 
 label {

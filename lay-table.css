@@ -108,7 +108,7 @@
     margin-left: 7px;
 }
 
-/* For button groups */
+/* For button groups (Radio Buttons) -------------------------------------- */
 .container {
     display: block;
     position: relative;
@@ -131,7 +131,7 @@
     padding-left: 10px;
 }
   
-.container input {
+.filter-panel .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
