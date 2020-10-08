@@ -22,12 +22,22 @@
 
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
   border-radius: 4px;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  transition: 0.5s;
+  outline: none;
   resize: vertical;
+  font-size: 1em;
+  color:var(--main-font-color);
 }
-  
+
+input[type=text]:focus {
+  border: 1px solid var(--main-theme-color);
+}
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;

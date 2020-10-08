@@ -1,6 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 /* Please make sure to add common styles to this document */
+ /* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import "variables.css"; 
 @import "header-drop-down.css"; 
 @import "form-controllers.css"; 
@@ -12,6 +13,9 @@
     font-family: var(--main-font);
 }
 
+
+/* Main Grid Layout -------------------------------------------------- */
+/* DO NOT CHANGE ! */
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 80% 1fr;
@@ -22,6 +26,13 @@
     "footer footer footer";
     background-color:var(--main-layout-bg-color);
     min-height: 100vh;
+}
+
+.content {
+    color:var(--main-font-color);
+    grid-area: content;
+    min-height: 600px;
+    padding: 10px 0 30px 0;
 }
 
 header {
@@ -37,6 +48,22 @@ header {
     padding:0 5rem;
     box-shadow:0 2px 10px #ccc;
 }
+
+.logo {
+    grid-area: logo;
+}
+
+
+footer {
+    color:var(--main-bg-color);
+    background-color: var(--main-dark-color);
+    grid-area: footer;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+/* Navigation bar ---------------------------------- */
 
 nav ul {
     list-style-type: none;
@@ -80,29 +107,13 @@ nav li a:hover {
     border-top: 3px solid var(--main-theme-color);
 }
 
-.logo {
-    grid-area: logo;
-}
-
-header {
-    background-color: var(--main-bg-color);
-    grid-area: header;
-    padding:0 5rem;
-    box-shadow:0 2px 10px #ccc;
-}
-
-.content {
-    color:var(--main-font-color);
-    grid-area: content;
-    min-height: 600px;
-    padding: 10px 0 30px 0;
-}
+/* Common Styles -------------------------------------- */
 
 h1 {
     padding: 20px 0;
 }
 
-h2 {
+h2, h3, h4, h6 {
     padding: 25px 0 20px 0;
 }
 
@@ -110,10 +121,3 @@ p {
     line-height: 1.8em;
 }
 
-footer {
-    color:var(--main-bg-color);
-    background-color: var(--main-dark-color);
-    grid-area: footer;
-    text-align: center;
-    padding: 12px 0;
-}
