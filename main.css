@@ -5,6 +5,7 @@
 @import "variables.css"; 
 @import "header-drop-down.css"; 
 @import "form-controllers.css"; 
+@import "lay-table.css";
 
 *{
     padding:0;
