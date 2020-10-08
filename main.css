@@ -3,6 +3,7 @@
 /* Please make sure to add common styles to this document */
 @import "variables.css"; 
 @import "header-drop-down.css"; 
+@import "form-controllers.css"; 
 
 *{
     padding:0;
@@ -58,6 +59,7 @@ nav li a {
 header .nav-profile ul li{
     display: inline-block;
 }
+
 header li a{
     text-decoration: none;
     padding: 5px 8px;
@@ -78,8 +80,6 @@ nav li a:hover {
     border-top: 3px solid var(--main-theme-color);
 }
 
-
-
 .logo {
     grid-area: logo;
 }
@@ -95,7 +95,7 @@ header {
     color:var(--main-font-color);
     grid-area: content;
     min-height: 600px;
-    padding: 10px 0;
+    padding: 10px 0 30px 0;
 }
 
 h1 {
@@ -116,18 +116,4 @@ footer {
     grid-area: footer;
     text-align: center;
     padding: 12px 0;
-}
-
-.btn{
-    background-color: var(--main-light-green);
-    padding: 15px;
-    border: 0px solid var(--main-light-green);
-    border-radius: 5px;
-    color: var(--main-bg-color);
-    font-size: 15px;
-    font-weight: 500;
-    transition: ease .3s;
-}
-.btn:hover {
-    background-color: var(--main-theme-color);
 }
