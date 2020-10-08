@@ -1,17 +1,17 @@
 /* Profile drop-down  */
-.dropbtn {
+/* .dropbtn {
     background-color: var(--main-theme-color);
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+  } */
 
-  .dropdown {
+  /* .dropdown {
     position: relative;
     display: inline-block;
-  }
+  } */
 
 .dropdown-content {
     display: none;
@@ -20,6 +20,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    /* font-size: 1.2em; */
   }
 
 .dropdown-content a {
@@ -29,7 +30,7 @@
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {background-color:var(--main-light-green)}
 
   .dropdown:hover .dropdown-content {
     display: block;
@@ -51,6 +52,7 @@
     transition: all ease-out .3s;
     cursor: pointer;
     border: none;
+    font-size: .9em;
 }
 
 .header-popup-btn:hover {
