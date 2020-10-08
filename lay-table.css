@@ -152,7 +152,7 @@
 }
 
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: var(--main-theme-color);
 }
 
 .checkmark:after {
