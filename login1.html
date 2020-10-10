@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/title-logo.png" type="image/icon type">
+    <link rel="stylesheet" href="my-profile1.css">
+    <link rel="stylesheet" href="lay-table.css">
+    <link rel="stylesheet" href="loginstyle.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="main-grid">
+        <header>
+            <img src="images/logo.png" width="150px" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#"class="active">Home</a></li>
+                    <li><a href="#" >Downloads</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="header-popup-btn">My Profile</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Help & Support</a>
+                    <hr>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+
+            <div class="subHeader">
+                <h1>Login</h1>
+                <hr>
+            </div>
+
+
+<!--<h2>Login</h2> -->
+
+<div class="main-form">
+<form action="/action_page.php" >
+
+
+  <div class="imgcontainer">
+    <img src="images/logo.png" width="150px" class="logo">
+  </div>
+
+<!--user name-->
+  <div class="row">   
+    <div class="col-65">
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    </div>
+  </div>
+
+<!--passward-->
+  <div class="row">   
+    <div class="col-65">
+        <input type="password" placeholder="Enter Password"  name="psw" required>
+    </div>
+  </div>
+
+<!--remember me-->  
+  <div class="row">
+    <div class="col-15">
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </div>
+       <div class="col-20">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+       </div>
+  </div>
+       
+
+   
+    <div class="col-65">
+      <button type="submit" >Login</button>   
+          
+    </div> 
+  
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
