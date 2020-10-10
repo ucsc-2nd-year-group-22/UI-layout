@@ -1,3 +1,0 @@
-2020.10.09 20:00:03 INFO  started: Metals version 0.9.4 in workspace 'E:\git\UI-layout' for client vscode.
-2020.10.09 20:00:04 INFO  time: initialize in 1.19s
-2020.10.09 20:00:05 WARN  no build tool detected in workspace 'E:\git\UI-layout'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
