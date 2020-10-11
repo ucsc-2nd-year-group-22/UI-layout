@@ -36,6 +36,10 @@
     overflow-x:auto;
 }
 
+.main-table button{
+    margin-left: 10px;
+}
+
 .main-table table {
     border-collapse: collapse;
     width: 100%;

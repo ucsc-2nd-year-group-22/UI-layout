@@ -10,7 +10,6 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
   transition: ease .3s;
   font-size: 1.1em;
   font-weight: bold;
@@ -33,7 +32,6 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
   transition: ease .3s;
   font-weight: bold;
   outline: none;
